@@ -1,15 +1,12 @@
-read -p "Enter your Emailaddress for git account :" emailA
-read -p "Paste the Path of dir that needs to be committed" pathA
-read -p "Enter the URL of url git branch" urlA
-echo "email is $emailA"
+read -p "Paste the Path of dir that needs to be committed: " pathA
+read -p "Enter the URL of url git branch: " urlA
 echo "Path set for uplading $pathA"
 echo "URL selected for uploading is $urlA"
-git config --global user.email $emailA
-break
+git config --global user.email gbhondve@rocketmail.com
 
 
 git init
-git add . 
+git add $pathA 
 git commit -m "First commit Message"
-git remote add origin https://github.com/gaurav310892/W7.git
+git remote add origin $urlA
 git push origin master

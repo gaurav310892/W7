@@ -5,7 +5,7 @@ echo "Path set for uplading $pathA"
 echo "URL selected for uploading is $urlA"
 git config --global user.email gbhondve@rocketmail.com
 
-if [ -z $comm ]
+if [ -z "$comm" ]
 then
 	comm=`date`
 fi

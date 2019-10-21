@@ -1,0 +1,4 @@
+source IpInfo.sh > /dev/null 2>&1
+
+echo -e "$addresses"
+
